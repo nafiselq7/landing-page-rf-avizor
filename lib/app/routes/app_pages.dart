@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
+import 'package:rf_avizor_landing_page/app/components/notfound.dart';
 
+import '../modules/download/bindings/download_binding.dart';
+import '../modules/download/views/download_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -15,6 +18,15 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.DOWNLOAD,
+      page: () => const DownloadView(),
+      binding: DownloadBinding(),
+    ),
+    GetPage(
+      name: '/not-found',
+      page: () => const NotFound(),
     ),
   ];
 }

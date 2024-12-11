@@ -1,13 +1,7 @@
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
-  //TODO: Implement HomeController
-
-  RxList listBanner = [
-    'assets/images/banner1.png',
-    'assets/images/top_donatur.png',
-    'assets/images/banner1.png',
-  ].obs;
+class DownloadController extends GetxController {
+  //TODO: Implement DownloadController
 
   final count = 0.obs;
   @override
